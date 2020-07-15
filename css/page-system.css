@@ -1,0 +1,339 @@
+figure img {
+  width: 100%;
+}
+
+.topbanner {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.topbanner__title {
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.topbanner__title h2 {
+  font-size: 3rem;
+  color: #383838;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.topbanner__title span {
+  font-size: 2rem;
+  color: #00a0e9;
+  font-weight: bold;
+  letter-spacing: 5px;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .topbanner figure {
+    height: 46.9vw;
+  }
+  .topbanner figure img {
+    height: 100%;
+  }
+  .topbanner__title h2 {
+    font-size: 2rem;
+  }
+  .topbanner__title p {
+    font-size: 1.8rem;
+  }
+}
+
+.personal {
+  margin: 100px 0;
+}
+.personal h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.personal h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #c9c9c9;
+  bottom: 0;
+  left: 0;
+}
+.personal__content {
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1023px) {
+  .personal {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal {
+    margin: 50px 0 0;
+  }
+}
+
+.education .container > h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.education .container > h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #c9c9c9;
+  bottom: 0;
+  left: 0;
+}
+.education__table-comment {
+  margin: 50px auto 100px;
+  max-width: 1000px;
+}
+.education__table-comment p {
+  color: #313131;
+}
+.education__table {
+  overflow-x: auto;
+}
+.education__table table {
+  width: 100%;
+  min-width: 1120px;
+}
+.education__table table td,
+.education__table table th {
+  border: 10px solid #fff;
+}
+.education__table table td {
+  background-color: #eee;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px 0;
+}
+.education__table .white {
+  background-color: #fff;
+}
+.education__table .fblank {
+  width: 40px;
+}
+.education__table .yheader {
+  width: 40px;
+  background-color: #00a0e9;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  padding: 0 5px;
+}
+.education__table .tdbaseline {
+  vertical-align: baseline;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.education__table .xheader {
+  width: 228px;
+  background-color: #086bb6;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
+}
+.education__table .separate {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: left;
+}
+.education__table .separate__child:first-child {
+  padding-right: 30px;
+}
+.education__table ul li {
+  text-align: left;
+  line-height: 1.5;
+}
+.education__table .blue {
+  color: #086bb6 !important;
+  font-weight: bold;
+}
+.education__table .morepadding {
+  padding: 30px 0;
+}
+.education__table a,
+.education__table a:hover,
+.education__table a:active,
+.education__table a:focus,
+.education__table a:visited {
+  text-decoration: none;
+  color: #535353;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.education__schedule {
+  max-width: 1000px;
+  background-color: #f0faff;
+  margin: auto;
+  padding: 50px 50px 1px;
+}
+.education__schedule .step {
+  margin-bottom: 50px;
+}
+.education__schedule .step__info {
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+.education__schedule .step__info:hover {
+  opacity: 0.8;
+}
+.education__schedule .step__info h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translateY(-50%);
+}
+.education__schedule .step__info button {
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #00a0e9;
+  text-align: center;
+  border: none;
+  background-color: #fff;
+  padding: 10px 25px;
+  transition: all 0.5s ease;
+}
+.education__schedule .step__content {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  transform-origin: bottom center;
+}
+.education__schedule .step__content.active{
+  transition: all 0.5s ease;
+  overflow: visible;
+}
+.education__schedule .step__content > div {
+  padding: 50px 0 20px;
+}
+.education__schedule .step__content > div h3 {
+  font-size: 2rem;
+  color: #00a0e9;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.education__schedule .step.expand .step__info button {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .education {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .education__table-comment {
+    margin: 30px auto;
+  }
+  .education__schedule {
+    padding: 20px 0 1px;
+  }
+  .education__schedule .step {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .education__schedule .step__info h2 {
+    font-size: 1.8rem;
+  }
+  .education__schedule .step button {
+    font-size: 1.2rem;
+    padding: 5px 20px;
+  }
+}
+
+.entry {
+  margin: 125px 0;
+}
+.entry a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  font-weight: bold;
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  position: relative;
+  z-index: 0;
+  background-color: #00a0e9;
+  border: 1px solid #00a0e9;
+  text-align: center;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+@media screen and (max-width: 768px) {
+  .entry {
+    margin: 25px 0;
+  }
+  .entry a {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+.entry a:hover{
+  background-color: white;
+  color: #00a0e9 !important;
+}
+/*.entry a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, transparent 20%, #00a0e9 80%);
+  background-size: 2000px 2000px;
+  background-position: 100% 50%;
+  z-index: -1;
+  transition: background-position 0.5s ease;
+}
+.entry a:hover {
+  color: #00a0e9;
+}
+.entry a:hover::after {
+  background-position: 0% 50%;
+}
+@media screen and (max-width: 1120px){
+  .education .container .education__table {
+    overflow-y: auto;
+}
+@media screen and (max-width: 1023px) {
+  .entry {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .entry {
+    margin: 25px 0;
+  }
+  .entry a {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=page-system.css.map */

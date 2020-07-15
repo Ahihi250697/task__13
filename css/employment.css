@@ -1,0 +1,270 @@
+/*@charset "UTF-8";
+html {
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+  font-size: 1.6rem;
+  color: #222;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+body, a, dd, div, dt, h1, h2, h3, h4, h5, h6, html, label, li, p, span, td, th {
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  body, a, dd, div, dt, h1, h2, h3, h4, h5, h6, html, label, li, p, span, td, th {
+    line-height: 1.4;
+  }
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: #222;
+}
+
+a {
+  outline: none;
+}
+
+a img {
+  outline: none;
+}
+
+a:focus, *:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+  color: #222;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px !important;
+    max-width: 100%;
+  }
+}
+*/
+.employment__banner {
+  background-image: url(../images/employment/img_employment_banner.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .employment__banner {
+    height: 46.9vw;
+  }
+}
+
+.employment__banner h2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .employment__banner h2 {
+    font-size: 2rem;
+  }
+}
+
+.employment__banner h2 span {
+  display: block;
+  font-weight: bold;
+}
+
+.employment__banner h2 span.title {
+  font-size: 2rem;
+  color: #00a0e9;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .employment__banner h2 span.title {
+    font-size: 1.4rem;
+  }
+}
+
+.employment__content {
+  padding: 100px 0 120px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .employment__content {
+    padding: 40px 20px !important;
+  }
+}
+
+.employment__content__wrapper {
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .employment__content__wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+.employment__content__wrapper div {
+  border-top: 1px solid #c9c9c9;
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .employment__content__wrapper div {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .employment__content__wrapper div span {
+    font-size: 1.4rem;
+  }
+}
+
+.employment__content__wrapper div span:nth-of-type(1) {
+  width: 16%;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+  .employment__content__wrapper div span:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.employment__content__wrapper div span:nth-of-type(2) {
+  width: 83%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .employment__content__wrapper div span:nth-of-type(2) {
+    width: 100%;
+  }
+}
+
+.employment__content__wrapper div span:nth-of-type(2) > a {
+  color: #00a0e9 !important;
+  text-decoration: underline;
+}
+
+.employment__content .employment--btn {
+  text-align: center;
+}
+
+.employment__content .employment--btn .btn {
+  color: #fff;
+  background-color: #00a0e9;
+  border: 1px solid #00a0e9;
+  width: 100%;
+  max-width: 300px;
+  padding: 25px 0;
+  letter-spacing: 0.1em;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition:all 0.3s ease;
+}
+.employment__content .employment--btn .btn:hover {
+  background-color: white;
+  color: #00a0e9;
+
+}
+@media screen and (max-width: 768px) {
+  .employment__content .employment--btn .btn {
+    max-width: 300px;
+    padding: 20px 0;
+  }
+}
+
+/*.employment__content .employment--btn .btn:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: -35%;
+  top: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.employment__content .employment--btn .btn:hover:after {
+  width: 135%;
+  height: 100%;
+  background: #fff;
+}
+
+.employment__content .employment--btn .btn:hover span {
+  color: #00a0e9;
+  opacity: 1;
+}*/
+
+.employment__content .employment--btn .btn > span {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  line-height: 1;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .employment__content .employment--btn .btn > span {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=employment.css.map */

@@ -1,0 +1,569 @@
+.hero {
+  width: 100%;
+  position: relative;
+}
+.hero__img {
+  width: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .hero__img {
+    height: 46.9vw;
+  }
+}
+.hero__img img {
+  width: 100%;
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .hero__img img {
+    width: auto;
+    height: 100%;
+  }
+}
+.hero__content {
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  .hero__content {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+.hero__content h2 {
+  font-size: 3rem;
+  color: #383838;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.hero__content h2 > span {
+  font-size: 2rem;
+  color: #00a0e9;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 768px) {
+  .hero__content h2 {
+    font-size: 2rem;
+  }
+  .hero__content h2 > span {
+    font-size: 1.4rem;
+  }
+}
+.text--big, .text--normal {
+  font-family: "Yu Gothic", sans-serif !important;
+}
+
+.sub-title {
+  padding: 12rem 0;
+}
+@media screen and (max-width: 768px) {
+  .sub-title {
+    padding: 6rem 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sub-title {
+    padding: 6rem 2rem;
+  }
+}
+.sub-title p {
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-title p {
+    font-size: 1.4rem;
+  }
+}
+.hr--custom {
+  border-color: #c9c9c9;
+}
+
+.about-working {
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .about-working {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-working {
+    padding: 0 2rem;
+  }
+}
+.about-working h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .about-working h2 {
+    font-size: 2rem;
+  }
+}
+.about-working .about__container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .about-working .about__container .shape01, .about-working .about__container .shape05, .about-working .about__container .shape04, .about-working .about__container .shape02, .about-working .about__container .shape03, .about-working .about__container .shape06 {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-working .about__container .shape01, .about-working .about__container .shape05, .about-working .about__container .shape04, .about-working .about__container .shape02, .about-working .about__container .shape03, .about-working .about__container .shape06 {
+    width: 100%;
+  }
+}
+.about-working .about__container .shape05 p {
+  word-spacing: 5rem;
+}
+.about-working .about__container .shape05 .text--big {
+  margin-right: 1rem;
+}
+.about-working .about__container .shape04 p {
+  word-spacing: 10rem;
+}
+.about-working .about__container .shape04 .text--big:nth-child(6) {
+  margin-left: 5rem;
+}
+.about-working .about__container .shape02 p, .about-working .about__container .shape03 p {
+  opacity: 0;
+}
+
+.performance {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .performance {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .performance {
+    padding: 0 2rem;
+  }
+}
+.performance h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.performance__container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.performance__container .box__item {
+  width: 47%;
+  display: flex;
+  min-height: 20rem !important;
+  align-items: center;
+  text-align: left;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .performance__container .box__item {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .performance__container .box__item {
+    padding: 2rem 0;
+    flex-direction: column;
+  }
+}
+.performance__container .box__item img {
+  margin-top: 0;
+}
+.performance__container .box__item p {
+  margin-top: 0;
+}
+.performance__container .box__item h3 {
+  margin-top: 0;
+}
+.performance__container .per__img {
+  margin-left: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .performance__container .per__img {
+    margin-left: 0;
+    width: 8rem;
+  }
+  .performance__container .per__img img {
+    width: 100%;
+  }
+}
+.performance__container .per__description {
+  width: 100%;
+  margin-left: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .performance__container .per__description {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+.box__item {
+  width: 30%;
+  margin-top: 5rem;
+  min-height: 36rem;
+  text-align: center;
+  border: 0.4rem solid #f0faff;
+}
+.box__item h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+.box__item img {
+  margin-top: 4rem;
+}
+.box__item p {
+  margin-top: 2.5rem;
+  font-weight: bold;
+}
+.box__item .text--big {
+  font-size: 5rem;
+  font-weight: bold;
+  vertical-align: baseline;
+}
+@media screen and (max-width: 1024px) {
+  .box__item .text--big {
+    font-size: 4rem !important;
+  }
+}
+.box__item .text--normal {
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .box__item .text--normal {
+    font-size: 2.2rem !important;
+  }
+}
+
+.trend {
+  width: 100%; }
+  .trend .title {
+    font-size: 24px;
+    color: #434343;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .trend .trend__chart__content {
+    border-top: 1px solid #c9c9c9;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .trend .trend__chart__content .trend__chart {
+      width: 48%;
+    display: block; }
+    /* .trend .trend__chart__content .trend__chart.active{
+      display: '';
+    } */
+      .trend .trend__chart__content .trend__chart span {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        color: #434343;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 6%; }
+      .trend .trend__chart__content .trend__chart canvas.indexChart {
+        margin-bottom: 11%; }
+      .trend .trend__chart__content .trend__chart .hunChart {
+        width: 55% !important;
+        margin: 0 auto; }
+      .trend .trend__chart__content .trend__chart .content {
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-size: 16px; }
+      .trend .trend__chart__content .trend__chart .panel-body {
+        position: relative;
+        color: white; }
+        .trend .trend__chart__content .trend__chart .panel-body .numLeft {
+          position: absolute;
+          top: 31%;
+          left: 32%; }
+          .trend .trend__chart__content .trend__chart .panel-body .numLeft .numtit {
+            font-size: 16px;
+            color: white;
+            margin-bottom: -25%; }
+          .trend .trend__chart__content .trend__chart .panel-body .numLeft .num {
+            font-size: 50px;
+            font-weight: bold; }
+            .trend .trend__chart__content .trend__chart .panel-body .numLeft .num .odometer-inside {
+              width: 56px;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex; }
+              .trend .trend__chart__content .trend__chart .panel-body .numLeft .num .odometer-inside .odometer-digit {
+                width: 100%; }
+                .trend .trend__chart__content .trend__chart .panel-body .numLeft .num .odometer-inside .odometer-digit .odometer-value {
+                  font-size: 50px;
+                  color: white;
+                  font-weight: bold; }
+        .trend .trend__chart__content .trend__chart .panel-body .numRight {
+          position: absolute;
+          top: 40%;
+          right: 34%; }
+          .trend .trend__chart__content .trend__chart .panel-body .numRight .numtit {
+            font-size: 16px;
+            color: white;
+            margin-bottom: -25%; }
+          .trend .trend__chart__content .trend__chart .panel-body .numRight .num {
+            font-size: 50px;
+            font-weight: bold; }
+            .trend .trend__chart__content .trend__chart .panel-body .numRight .num .odometer-inside {
+              width: 56px;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex; }
+              .trend .trend__chart__content .trend__chart .panel-body .numRight .num .odometer-inside .odometer-digit {
+                width: 100%; }
+                .trend .trend__chart__content .trend__chart .panel-body .numRight .num .odometer-inside .odometer-digit .odometer-value {
+                  font-size: 50px;
+                  color: white;
+                  font-weight: bold; }
+      .trend .trend__chart__content .trend__chart .panel-body.science .numLeft {
+        top: 17%;
+        left: 33%; }
+      .trend .trend__chart__content .trend__chart .panel-body.science .numRight {
+        top: 45%;
+        right: 36%; }
+      .trend .trend__chart__content .trend__chart .panel-body.exp .numLeft {
+        top: 38%;
+        left: 34%; }
+      .trend .trend__chart__content .trend__chart .panel-body.exp .numRight {
+        top: 25%; }
+
+@media screen and (max-width: 992px) {
+  .container__all__chart .trend .panel-body .numLeft .numtit,
+  .container__all__chart .trend .panel-body .numRight .numtit {
+    font-size: 14px !important; }
+  .container__all__chart .trend .panel-body .numLeft .num,
+  .container__all__chart .trend .panel-body .numRight .num {
+    font-size: 33px !important; }
+    .container__all__chart .trend .panel-body .numLeft .num .odometer-inside,
+    .container__all__chart .trend .panel-body .numRight .num .odometer-inside {
+      width: 36px !important; }
+      .container__all__chart .trend .panel-body .numLeft .num .odometer-inside .odometer-digit .odometer-value,
+      .container__all__chart .trend .panel-body .numRight .num .odometer-inside .odometer-digit .odometer-value {
+        font-size: 3rem !important; } }
+@media screen and (max-width: 768px) {
+  .container__all__chart .trend .trend__chart {
+    width: 100% !important; }
+    .container__all__chart .trend .trend__chart span {
+      margin-top: 10% !important; }
+    .container__all__chart .trend .trend__chart .panel-body .numLeft .numtit,
+    .container__all__chart .trend .trend__chart .panel-body .numRight .numtit {
+      font-size: 16px !important; }
+    .container__all__chart .trend .trend__chart .panel-body .numLeft .num,
+    .container__all__chart .trend .trend__chart .panel-body .numRight .num {
+      font-size: 50px !important; }
+      .container__all__chart .trend .trend__chart .panel-body .numLeft .num .odometer-inside,
+      .container__all__chart .trend .trend__chart .panel-body .numRight .num .odometer-inside {
+        width: 56px !important; }
+        .container__all__chart .trend .trend__chart .panel-body .numLeft .num .odometer-inside .odometer-digit .odometer-value,
+        .container__all__chart .trend .trend__chart .panel-body .numRight .num .odometer-inside .odometer-digit .odometer-value {
+          font-size: 5rem !important; }
+    .container__all__chart .trend .trend__chart .panel-body.science .numLeft {
+      top: 20% !important;
+      left: 35% !important; }
+    .container__all__chart .trend .trend__chart .panel-body.exp .numRight {
+      top: 34% !important; } }
+@media screen and (max-width: 576px) {
+  .container__all__chart .trend .trend__chart span {
+    margin-top: 6% !important; }
+  .container__all__chart .trend .trend__chart .panel-body .numLeft .numtit,
+  .container__all__chart .trend .trend__chart .panel-body .numRight .numtit {
+    font-size: 1.2rem !important; }
+  .container__all__chart .trend .trend__chart .panel-body .numLeft .num,
+  .container__all__chart .trend .trend__chart .panel-body .numRight .num {
+    font-size: 36px !important; }
+    .container__all__chart .trend .trend__chart .panel-body .numLeft .num .odometer-inside,
+    .container__all__chart .trend .trend__chart .panel-body .numRight .num .odometer-inside {
+      width: 36px !important; }
+      .container__all__chart .trend .trend__chart .panel-body .numLeft .num .odometer-inside .odometer-digit .odometer-value,
+      .container__all__chart .trend .trend__chart .panel-body .numRight .num .odometer-inside .odometer-digit .odometer-value {
+        font-size: 3rem !important; }
+  .container__all__chart .trend .trend__chart .panel-body.science .numLeft {
+    top: 20% !important;
+    left: 35% !important; }
+  .container__all__chart .trend .trend__chart .panel-body.science .numRight {
+    top: 50%;
+    right: 37%; }
+  .container__all__chart .trend .trend__chart .panel-body.exp .numLeft {
+    top: 50%;
+    left: 36%; }
+  .container__all__chart .trend .trend__chart .content {
+    font-size: 1.4rem !important; } }
+.no__offical {
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 10%; }
+  .no__offical .main__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .no__offical .no__offical__main__content {
+    border-top: 1px solid #c9c9c9; }
+    .no__offical .no__offical__main__content .no__offical__content {
+      background-color: #f0faff;
+      margin-top: 5%;
+      padding-bottom: 5%; }
+      .no__offical .no__offical__main__content .no__offical__content .content__title {
+        text-align: center;
+        padding: 5% 0;
+        font-size: 24px;
+        color: #00a0e9;
+        font-weight: bold; }
+      .no__offical .no__offical__main__content .no__offical__content .div__flex__nooff {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .no__offical .no__offical__main__content .no__offical__content .div__flex__nooff .no__off__content {
+          width: 100%;
+          border: 2px solid #00a0e9;
+          background-color: white;
+          margin: 0 4% 4%;
+          position: relative;
+          z-index: 1; }
+          .no__offical .no__offical__main__content .no__offical__content .div__flex__nooff .no__off__content .content {
+            padding: 10px 20px;
+            font-size: 16px; }
+          .no__offical .no__offical__main__content .no__offical__content .div__flex__nooff .no__off__content:after {
+            content: "";
+            width: 20px;
+            height: 18px;
+            display: block;
+            border-bottom: 1px solid #00a0e9;
+            border-left: 2px solid #00a0e9;
+            background-color: white;
+            position: absolute;
+            z-index: 0;
+            bottom: -10px;
+            left: 40px;
+            transform: skew(45deg) rotate(-45deg);
+            -webkit-transform: skew(45deg) rotate(-45deg);
+            -moz-transform: skew(45deg) rotate(-45deg);
+            -ms-transform: skew(45deg) rotate(-45deg);
+            -o-transform: skew(45deg) rotate(-45deg); }
+        .no__offical .no__offical__main__content .no__offical__content .div__flex__nooff .no__50 {
+          width: 42%; }
+
+.choosing .choosing__main {
+  border: none;
+  margin-top: 8%; }
+  .choosing .choosing__main .choosing__content2 {
+    margin-top: 0; }
+  .choosing .choosing__main .div__note {
+    padding: 0 4% 2%;
+    background-color: #f0faff; }
+    .choosing .choosing__main .div__note .note {
+      display: inline-block;
+      width: 100%;
+      background-color: #f0faff;
+      padding-left: 10px;
+      font-size: 2rem;
+      position: relative; }
+      .choosing .choosing__main .div__note .note::before {
+        content: "";
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #00a0e9; }
+
+.entry__in__numbers {
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  min-height: 150px; }
+  .entry__in__numbers .entry__button {
+    font-weight: bold;
+    border: 1px solid #00a0e9;
+    margin: 10% 0;
+    padding: 20px 100px;
+    background-color: #00a0e9; 
+    transition: all .5s ease;}
+    .entry__in__numbers .entry__button a {
+      color: white;
+      font-size: 3.2rem; 
+      text-decoration: none !important;}
+.entry__in__numbers .entry__button:hover{
+  cursor: pointer;
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+  .entry__in__numbers .entry__button{
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+  }
+  .entry__in__numbers .entry__button a{
+    font-size: 2rem;
+  }
+}
+.entry__in__numbers .entry__button:hover>a{
+  color: #00a0e9 !important;
+}
+@media screen and (max-width: 576px) {
+  .no__offical .no__offical__main__content .no__offical__content .content__title {
+    font-size: 1.8rem !important; }
+  .no__offical .no__offical__main__content .no__offical__content .div__flex__nooff .no__off__content {
+    margin-bottom: 6% !important; }
+    .no__offical .no__offical__main__content .no__offical__content .div__flex__nooff .no__off__content .content {
+      font-size: 1.4rem !important; }
+
+  .choosing .choosing__main .div__note .note {
+    font-size: 1.4rem !important; }
+    .entry__in__numbers .entry__button a {
+      font-size: 20px !important; } }
+.container__all__chart {
+  max-width: 1120px;
+  padding: 0 3.3%;
+  margin: 0 auto; }
+/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=page2.css.map */
